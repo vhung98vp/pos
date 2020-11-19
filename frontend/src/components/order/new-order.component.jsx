@@ -93,9 +93,7 @@ export default class NewOrder extends Component {
         this.setState({
           listSearch: response.data
         });
-      });
-
-    
+      });    
   }
 
   onChangePaid(){
@@ -270,6 +268,9 @@ export default class NewOrder extends Component {
                               type="number"
                               className="form-control"
                               name="quantity"
+                              min="0.01"
+                              step="0.01"
+                              max={product.quantity}
                               id = {product.id}
                               onChange={this.onChangeQuantity}
                             />

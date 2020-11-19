@@ -269,6 +269,8 @@ export default class NewOrder extends Component {
                             type="number"
                             className="form-control"
                             name="quantity"
+                            min="0.01"
+                            step="0.01"
                             id = {product.id}
                             onChange={this.onChangeQuantity}
                           />
