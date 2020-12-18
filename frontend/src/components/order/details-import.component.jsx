@@ -41,7 +41,7 @@ export default class ImportDetails extends Component{
             <div className="container">
               <div className="jumbotron">                  
                 <h3>{this.state.content}</h3>
-                <div class="row">
+                <div className="row">
                     <table className = "table table-striped table-bordered">
                         <thead></thead>
                         <tbody>
@@ -68,7 +68,7 @@ export default class ImportDetails extends Component{
                         </tbody>
                     </table>
                 </div>
-                <div class="row">
+                <div className="row">
                     <table className = "table table-striped table-bordered">
                         <thead>
                             <tr>

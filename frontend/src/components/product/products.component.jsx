@@ -67,9 +67,7 @@ export default class Products extends Component {
 
   deleteProduct(id){
     ProductService.deleteProduct(id).then(res => {
-      this.setState({
-        products: this.state.products.filter(item => item.id !== id)
-      });
+      window.location.reload();
     })
   }
 

@@ -5,6 +5,7 @@ import CheckButton from "react-validation/build/button";
 
 import ProductService from "../../services/product.service";
 import CategoryService from "../../services/category.service";
+import Axios from "axios";
 
 const required = value => {
   if (!value) {
@@ -187,7 +188,7 @@ export default class NewProduct extends Component {
           });
         }
       );
-      this.props.history.push('/product');
+      Axios.get('/product');
     }
   }
 

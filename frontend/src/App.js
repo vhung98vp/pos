@@ -64,10 +64,9 @@ class App extends Component {
     const { currentUser, showAdminBoard, showManagerBoard, showWarehouseBoard, showCashierBoard } = this.state;
 
     return (
-      <div className="">
-        
+      <div className="">        
         <header>
-        <MDBNavbar style={color} fixed="top" dark expand="md">
+          <MDBNavbar style={color} fixed="top" dark expand="md">
               <MDBContainer>
                 <MDBNavbarBrand href="/">
                   <strong>POS App</strong>
@@ -146,9 +145,7 @@ class App extends Component {
                 </MDBCollapse>
               </MDBContainer>
             </MDBNavbar>
-          </header>
-
-        
+          </header>        
         <div>
         <Switch>
             <Route exact path={["/", "/home"]} component={Home} />
@@ -172,7 +169,6 @@ class App extends Component {
             <Route path="/admin" component={BoardAdmin} />
             </Switch>
         </div>
-
       </div>
     );
   }
