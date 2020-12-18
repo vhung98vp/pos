@@ -111,7 +111,7 @@ public class ProductController {
 
         //delete
         if(product.getPicture() != null)
-            pictureRepository.delete(product.getPicture());
+            product.setPicture(null);
         if(product.getCategory() != null)
             product.setCategory(null);
         productRepository.delete(product);

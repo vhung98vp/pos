@@ -95,7 +95,8 @@ public class OrderService {
             productRepository.save(product);
 
             OrderProductKey orderProductKey = new OrderProductKey(order.getId(),productIds.get(i));
-            OrderProduct orderProduct = new OrderProduct(orderProductKey, order, product, product.getSellPrice(), quantities.get(i));
+            OrderProduct orderProduct = new OrderProduct(orderProductKey, order,
+                    product, product.getSellPrice(), quantities.get(i));
             orderProductRepository.save(orderProduct);
 
             total += quantities.get(i)*product.getSellPrice();

@@ -84,7 +84,7 @@ public class ProductService {
                 product.getInpPrice(), product.getSellPrice(), product.getQuantity(), product.getUnit());
         if(product.getPicture() != null){
             productResponse.setPictureId(product.getPicture().getId());
-            productResponse.setPictureUri(pictureService.getPictureUrl(product.getPicture()));
+            productResponse.setPictureUri(pictureService.getPictureUri(product.getPicture()));
         }
         if(product.getCategory() != null) {
             productResponse.setCategoryId(product.getCategory().getId());

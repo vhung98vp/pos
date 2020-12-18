@@ -9,7 +9,7 @@ import vietnam.pos.models.media.Picture;
 public class PictureService {
 
     //Picture
-    public String getPictureUrl(Picture picture) {
+    public String getPictureUri(Picture picture) {
         StringBuilder sb = new StringBuilder();
         sb.append("data:image/png;base64,");
         sb.append(StringUtils.newStringUtf8(Base64.encodeBase64(picture.getBinaryData(), false)));
